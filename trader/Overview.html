@@ -1,102 +1,53 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-            "http://www.w3.org/TR/html4/strict.dtd">
+<!doctype html >
 <html>
-<HEAD>
+<head>
+  <meta charset="utf-8" />
+  <title>Gold and Currencies Trader Inc</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
 
-<SCRIPT type="text/javascript">
+  <link rel="stylesheet" type="text/css" href="../estilos.css">
 
-function popw(nom_de_la_page, nom_interne_de_la_fenetre)
+</head>
 
-{
+<body>
 
-window.open(nom_de_la_page, nom_interne_de_la_fenetre, config='height=200, width=400, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no')
-
-}
-
-function redir(uri)
-
-{
-
-	window.open(uri)
-
-}
-
-</SCRIPT>
-
-<link rel="stylesheet" type="text/css" href="estilos.css">
-
-<style>
-
-  table#nav1 {
-	position:absolute;
-    top:10px;
-    left: 5px;
-	width:200px
-  }
-
-  table#nav2 {
-    position: absolute;
-    top:10px;
-	left: 210px;
-  }
-
-  table#nav2 td, table#nav1 td {
-    width:100px;
-	border:solid think black;
-	background-color:#999;
-	color:#fff;
-    text-align:center;
-  }
-
-  table#nav1 td {
-    text-align:left;
-  }
-
-  table#nav2 td.link {
-    border-radius: 0.5em;
-    border: solid 2px black;
-    box-shadow: rgba(0,0,0,0.2) 0.5em 0.5em 0.3em;
-    text-align:center;
-  }
-
-  td a {
-    color: #fff;
-  }
-
-  a {
-	text-decoration: none;
-  }
-
-  div#content {
-	position:absolute;
-	top:20px;
-	left: 210px;
-  }
-
-
-</style>
-
-</HEAD>
-<BODY BGCOLOR="#FFEF99" onload="window.open('fenetre_popup.html','Advertisement',config='height=100, width=400, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no,fullscreen=yes')">
-
-<table id="nav1">
-  <tr><td><font size="+1"><img src="spacer.gif" width="5" />Menu</font></td></tr>
-  <tr><td><img src="spacer.gif" height="30" /></td></tr>		
-  <tr><td><img src="spacer.gif" width="5" /><a href="javascript:popw('xchange.html','Exchange_Currencies');">Exchange Currencies</a></td></tr>
-  <tr><td><img src="spacer.gif" width="5" /><a href="javascript:popw('buyg.html','Buy_Gold');">Buy Gold</a></td></tr>
-  <tr><td><img src="spacer.gif" width="5" /><a href="http://www.nyse.com/" target="_blank">Wall Street Official Site</a></td></td></tr>
-</table>
-
-<table id="nav2">
-  <tr><td class="link"><a href="/">Home</a></td><td style="background-color:#FFEF99"><img src="spacer.gif" width="5" /></td><td class="link"><a href="rates.html">Our Rates</a></td></tr>
-</table>
+  <nav>
+     <ul id="menu-top">
+      <li><a href="/">Home</a></li>
+      <li><a href="rates.html">Our Rates</a></li>
+     </ul>
+    <ul id="menu-iz">
+      <li><a href="javascript:popw('xchange.html','Exchange_Currencies');">Exchange Currencies</a></li>
+      <li><a href="javascript:popw('buyg.html','Buy_Gold');">Buy Gold</a></li>
+      <li><a href="http://www.nyse.com/" target="_blank">Wall Street Official Site</a></li>
+    </ul>
+   </nav>
 
 <div id="content">
+  
   <h1>Welcome to Gold and Currencies Trader Inc</h1>
+
   <p>We are trading, buying and selling currencies and gold pepites, with no commissions.</p>
   <p>Explore our services on the left menu, and get <a href="rates.html">our rates</a> from the top menu.</p>
 </div>
 
+<div id="dialog" title="Promotion">
+    <p id="promo-ad">Get 10% off your next subscription to any W3C training course</p>
+    <p id="promo">Provide the promotion code "W3C_Rules" during your next subscription</p>
+</div>
 
-</BODY>
-</HTML>
+  <script>
+    $.fx.speeds._default = 1000;
+    $( "#dialog" ).dialog({
+            show: "blind",
+            hide: "explode"
+    });
+    $("#promo-ad").click(funtion{
+      $("#promo").show();
+    });
+  </script>
+
+</body>
+</html>

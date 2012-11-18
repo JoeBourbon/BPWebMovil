@@ -3,4 +3,48 @@ body{
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 1.5em;
 	font-style: italic;
+	background-color: #FFEF99;
+}
+
+header{
+	text-align: center;
+}
+
+nav a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+nav a:hover{
+	color: #FFF000;
+}
+nav li{
+    width:10em;
+	border:solid think black;
+	background-color:#999;
+	color:#fff;
+    text-align:center;
+    list-style: none;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+#promo-ad{
+	cursor: pointer;
+}
+#promo{
+	display: none;
+}
+#menu-top{
+	display: inline-block;
+}
+#menu-top li{
+	display: inline-block;
+    border-radius: 0.5em;
+    border: solid 2px black;
+    box-shadow: rgba(0,0,0,0.2) 0.5em 0.5em 0.3em;
+    text-align:center;
+}
+
+#dialog, #dialog title{
+	font-size: 0.5em;
 }
