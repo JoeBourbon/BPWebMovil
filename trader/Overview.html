@@ -7,7 +7,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
 
-  <link rel="stylesheet" type="text/css" href="../estilos.css">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
 
 </head>
 
@@ -16,11 +16,11 @@
   <nav>
      <ul id="menu-top">
       <li><a href="/">Home</a></li>
-      <li><a href="rates.html">Our Rates</a></li>
+      <li><a href="rates.html" class="abre-pagina">Our Rates</a></li>
      </ul>
     <ul id="menu-iz">
-      <li><a href="javascript:popw('xchange.html','Exchange_Currencies');">Exchange Currencies</a></li>
-      <li><a href="javascript:popw('buyg.html','Buy_Gold');">Buy Gold</a></li>
+      <li><a href="xchange.html" class="abre-pagina">Exchange Currencies</a></li>
+      <li><a href="buyg.html" class="abre-pagina">Buy Gold</a></li>
       <li><a href="http://www.nyse.com/" target="_blank">Wall Street Official Site</a></li>
     </ul>
    </nav>
@@ -30,23 +30,41 @@
   <h1>Welcome to Gold and Currencies Trader Inc</h1>
 
   <p>We are trading, buying and selling currencies and gold pepites, with no commissions.</p>
-  <p>Explore our services on the left menu, and get <a href="rates.html">our rates</a> from the top menu.</p>
+  <p>Explore our services on the left menu, and get <a href="rates.html" class="abre-pagina">our rates</a> from the top menu.</p>
 </div>
 
 <div id="dialog" title="Promotion">
     <p id="promo-ad">Get 10% off your next subscription to any W3C training course</p>
     <p id="promo">Provide the promotion code "W3C_Rules" during your next subscription</p>
 </div>
-
+<div id="pagina"></div>
   <script>
     $.fx.speeds._default = 1000;
     $( "#dialog" ).dialog({
             show: "blind",
-            hide: "explode"
+            width: 450,
+            hide: "explode",
+            modal: true,
+            buttons: {
+                Ok: function() {
+                    $( this ).dialog( "close" );
+                }
+            }        
     });
-    $("#promo-ad").click(funtion{
+    $("#promo-ad").click(function() {
+      $(this).hide();
       $("#promo").show();
     });
+    $(".abre-pagina").click(function(event) {
+      event.preventDefault();
+      var laPagina = $(this).attr("href");
+      $("#pagina").load(laPagina).dialog({
+          width: 550,
+          show: "blind",
+          modal:true
+      }); 
+    });
+
   </script>
 
 </body>
