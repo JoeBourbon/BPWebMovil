@@ -1,44 +1,62 @@
 		html, body { margin: 0; padding: 0; background-color:black;}
-		body { padding-bottom: 20px; text-align: center; }
+		body { padding-bottom: 2em; text-align: center; }
 		#container {
 			text-align: left;
-			margin: 0 auto;
-			width: 1000px;
+			width: 100%;
 		}		
 		#header {
-                        color: white;
-                        background-image:url("beethoven-background.jpg");
-                        background-position: bottom right;
-                        background-repeat: no-repeat;
-                        background-color:black;
+			width: 100%;
+			color: white;
+			background-image:url("beethoven-background.jpg");
+			background-position: bottom right;
+			background-repeat: no-repeat;
+			background-color:black;
 			border: 1px solid black;
-			margin: 20px;
-			padding: 20px;
-                        padding-bottom:0;
+			margin: 0;
+			padding: 0.2em;
 		}
 		#sidebar {
 			background-color:#baa;
 			border: 1px solid black;
-			width: 200px;
-			margin-left: 20px;
-			padding-right:1em;
-			float: left;
-			display: inline; /* floats are handled as block elements, this is to fix 
-							   a margin collapsing bug in IE */
+			width: 100%;
+			margin: 0;
+			padding: 2em;
+		}
+		#sidebar ul{
+			margin:0;
+			padding:0;
+		}
+		#sidebar li{
+			list-style:none;
+			margin:0.5em 0.2em;
+			padding:0.5em;
+			border:solid 1px #990000;
+			-moz-border-radius: 0.5em;
+			border-radius: 0.5em;
+		}
+		.degradado{
+			background: #feccb1; /* Old browsers */
+			background: -moz-linear-gradient(top,  #feccb1 0%, #f17432 50%, #ea5507 51%, #fb955e 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feccb1), color-stop(50%,#f17432), color-stop(51%,#ea5507), color-stop(100%,#fb955e)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
 		}
 		#content {
 			background-color:white;
-			margin-left: 242px;
-			margin-right: 20px;
 			border: 1px solid black;
-			padding: 20px;
+			width: 100%;
+			margin: 0;
+			padding: 2em;
 		}
 		#footer {
 			background-color:white;
-			margin: 20px 20px 0 20px;
-			padding: 20px;
 			border: 1px solid black;
-			clear: left;
+			width: 100%;
+			margin: 0;
+			padding: 2em;
 		}
 
 
