@@ -44,6 +44,16 @@
 			background: linear-gradient(to bottom,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* W3C */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
 		}
+		.degradado a{
+			color:#FFF;
+			text-align:center;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:1.25em;
+			text-decoration:none;
+		}
+		.degradado a span{
+			display:block;
+		}
 		#content {
 			background-color:white;
 			border: 1px solid black;
@@ -58,7 +68,7 @@
 			margin: 0;
 			padding: 2em;
 		}
-
+	
 
 thead th {
    background-color:#bfb;
