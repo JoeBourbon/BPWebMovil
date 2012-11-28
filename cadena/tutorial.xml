@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<pages>
+	<page sec="Introducción" tooltip="Bienvenidos">1.jpg</page>
+	<page sec="Introducción" tooltip="Planteamiento">2.jpg</page>
+	<page sec="Introducción" tooltip="Estad atentos">3.jpg</page>
+	<page sec="Introducción" tooltip="Crucigrama">cruzi.swf</page>
+	<page sec="Introducción" tooltip="Soluciones del crucigrama">5.jpg</page>
+	<page sec="Introducción" tooltip="... a tener en cuenta">6.jpg</page>
+	<page sec="Introducción" tooltip="Imagináos que sois una empresa">7.jpg</page>
+	<page sec="Los Objetivos" tooltip="Definir los objetivos">8.jpg</page>
+	<page sec="Los Objetivos" tooltip="El arte de preguntar">9.jpg</page>
+	<page sec="Los Objetivos" tooltip="Un ejemplo">10.jpg</page>
+	<page sec="Nuestra Idea" tooltip="Describir nuestra idea">11.jpg</page>
+	<page sec="Nuestra Idea" tooltip="Tormenta de ideas">12.jpg</page>
+	<page sec="Nuestra Idea" tooltip="Tormenta de ideas: paso 1">13.jpg</page>
+	<page sec="Nuestra Idea" tooltip="Tormenta de ideas: paso 2">14.jpg</page>
+	<page sec="Nuestra Idea" tooltip="Tormenta de ideas: paso 3">15.jpg</page>
+	<page sec="El Equipo" tooltip="Definir el equipo del Proyecto">16.jpg</page>
+	<page sec="El Equipo" tooltip="Lista de miembros del equipo ">17.jpg</page>
+	<page sec="Planificación" tooltip="Realizar una planificación">18.jpg</page>
+	<page sec="Planificación" tooltip="Pasos para una correcta planificación">19.jpg</page>
+	<page sec="Planificación" tooltip="Ejemplo de planificación">20.jpg</page>
+	<page sec="Planificación" tooltip="El diagrama de Gantt">21.jpg</page>
+	<page sec="Planificación" tooltip="Ejemplo de diagrama de Gantt">22.jpg</page>
+	<page sec="Estudio Económico" tooltip="Estudio Económico">23.jpg</page>
+	<page sec="Estudio Económico" tooltip="Definir los gastos">24.jpg</page>
+	<page sec="Estudio Económico" tooltip="Ejemplo de Definición de gastos">25.jpg</page>
+	<page sec="Estudio Económico" tooltip="Os toca a vosotros">26.jpg</page>
+	<page sec="Estudio Económico" tooltip="Suerte">29.jpg</page>
+</pages>
