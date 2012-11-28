@@ -1,22 +1,53 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <title>Promo</title>
-</head>
-
-<body style="background: #FFEF99">
-
-<p style="font-weight:bold">Buying Gold</p>
-<p>Rates: 150$/Kg</p>
-<FORM action="end.html">
-<table>	
-<tr><td style="font-weight:bold">Amount (in Kg):</td> <td><input type="text" size="6"></td></tr>
-
-<tr><td><INPUT TYPE="BUTTON" VALUE="Cancel" ONCLICK="window.close()"></td>
-<td><INPUT TYPE="Submit" VALUE="Buy" ></td></tr>
-</table>
-</FORM>
-
-</body>
-</html>
+<!doctype html >
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Promo</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <script type="text/javascript">
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } 
+	if (errors){
+		 alert('The following error(s) occurred:\n'+errors);
+	}else{
+		var f = document.getElementById("formulario");
+		f.style.display="none";
+		var m = document.getElementById("mensa");
+		m.style.display="block";
+	}
+} }
+  </script>
+</head>
+<body>
+
+<div id="formulario">
+<p>Buying Gold</p>
+
+<p>Rates: 150$/Kg</p>
+
+<FORM action="">
+<label for="amount">Amount (in Kg)</label>
+<input name="amount" type="text" id="amount" size="6">
+<INPUT TYPE="Submit" onClick="MM_validateForm('amount','','R');return false;" VALUE="Buy" >
+</FORM>
+</div>
+<div id="mensa">
+<h1>Operation Completed</h1>
+<p style="font-weight:bold">Thanks for buying at Gold and Currencies Trader Inc</p>
+</div>
+</body>
+
+</html>
+
