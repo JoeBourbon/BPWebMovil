@@ -20,27 +20,6 @@ body { padding-bottom: 2em; text-align: center; }
 	padding:5%;
 	font-size:1.25em;
 }
-nav {
-	background-color:#baa;
-	border: 1px solid black;
-	width: 96%;
-	margin: 0;
-	padding: 2%;
-}
-nav ul{
-	margin:0;
-	padding:0;
-}
-nav li{
-	list-style:none;
-	margin:0.5em 0.05em;
-	padding:0.5em;
-	border:solid 1px #990000;
-	-moz-border-radius: 0.5em;
-	border-radius: 0.5em;
-	display:inline-block;
-}
-
 #sidebar {
 	background-color:#baa;
 	border: 1px solid black;
@@ -74,7 +53,7 @@ nav li{
 	color:#FFF;
 	text-align:center;
 	font-family:Helvetica, Arial, sans-serif;
-	font-size:1em;
+	font-size:1.25em;
 	text-decoration:none;
 }
 .degradado a span{
